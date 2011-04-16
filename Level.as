@@ -9,9 +9,18 @@ package
 	{
 		//[Embed(source="images/bg.png")] public static const BgGfx: Class;
 		
+		public var player:Player;
+		public var ball:Ball;
+		
 		public function Level ()
 		{
-			add(new Player());
+			
+		}
+		
+		public override function begin ():void
+		{
+			add(player = new Player());
+			add(ball = new Ball(player));
 		}
 		
 		public override function update (): void
