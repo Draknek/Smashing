@@ -34,8 +34,8 @@ package
 			
 			if (dz < 0.01) return;
 			
-			holdX += (holdDistance * dx/dz - holdX) * 0.2;
-			holdY += (holdDistance * dy/dz - holdY) * 0.2;
+			holdX += (dx * 0.15 - holdX) * 0.2;
+			holdY += (dy * 0.15 - holdY) * 0.2;
 			
 			//x += (Input.mouseX - x) * 0.5;
 			//y += (Input.mouseY - y) * 0.5;
