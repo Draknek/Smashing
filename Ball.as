@@ -16,7 +16,8 @@ package
 		public var minLength:Number;
 		
 		public const ELASTIC:Number = 0.04;
-		public const FRICTION:Number = 0.1;
+		public const FRICTION:Number = 0.05;
+		public const MIN_LENGTH_RATIO:Number = 0.1;
 		
 		public function Ball (p:Player)
 		{
@@ -34,7 +35,7 @@ package
 			image.originX = 1 + radius*2;
 			image.originY = radius;
 			
-			minLength = radius * 3;
+			minLength = radius * MIN_LENGTH_RATIO;
 			
 			x -= minLength;
 		}

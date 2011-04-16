@@ -24,7 +24,7 @@ package
 		
 		public override function update (): void
 		{
-			/*var dx:Number = Input.mouseX - x;
+			var dx:Number = Input.mouseX - x;
 			var dy:Number = Input.mouseY - y;
 			var dz:Number = Math.sqrt(dx*dx + dy*dy);
 			
@@ -35,10 +35,10 @@ package
 			if (dz < 0.01) return;
 			
 			holdX += (holdDistance * dx/dz - holdX) * 0.2;
-			holdY += (holdDistance * dy/dz - holdY) * 0.2;*/
+			holdY += (holdDistance * dy/dz - holdY) * 0.2;
 			
-			x += (Input.mouseX - x) * 0.5;
-			y += (Input.mouseY - y) * 0.5;
+			//x += (Input.mouseX - x) * 0.5;
+			//y += (Input.mouseY - y) * 0.5;
 		}
 		
 		public override function render (): void
